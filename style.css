@@ -7,6 +7,7 @@ body {
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px 10px;
+    background-color: #EDEDED;
 }
 
 a {
@@ -19,7 +20,7 @@ nav {
     height: 60px;
     padding: 10px 0px;
     gap: 10px;
-    background: #FFF;
+    background-color: #FFF;
 }
 
 .navButton {
@@ -28,8 +29,8 @@ nav {
     padding: 0px 10px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     background: #EDEDED;
+    color: #000;
 }
 
 #navLogo{
@@ -38,6 +39,8 @@ nav {
 
 #intro {
     display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 #introText {
@@ -46,8 +49,6 @@ nav {
     height: 500px;
     padding: 50px 10px;
     flex-direction: column;
-    align-items: flex-start;
-    flex-shrink: 0;
 }
 
 #introTitle {
@@ -84,15 +85,22 @@ nav {
     display: none;
 }
 
+#geschiedenis{
+    display: flex;
+    flex-direction: column;
+    
+}
+
 #geschiedenis h1 {
     font-size: 50px;
     font-weight: 700;
+    margin: 0px;
 }
 
 #geschiedenis p {
     font-size: 20px;
     width: 797px;
-    
+    margin: 0px;
 }
 
 #reviews {
@@ -135,7 +143,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    background-color: #EDEDED;
+    background-color: #D9D9D9;
+    margin-top: 100px;
 }
 
 #footerLogo {
