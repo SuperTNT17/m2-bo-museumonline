@@ -3,6 +3,8 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px 10px;
 }
@@ -12,46 +14,26 @@ a {
 }
 
 nav {
-    width: 1440px;
-    height: 64px;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    padding: 10px 0px;
+    gap: 10px;
     background: #FFF;
 }
 
-#navigation {
-    display: flex;
-    width: 1260px;
-    height: 44px;
-    padding: 10px 0px;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
-#navLogo {
-    width: 63px;
-    height: 64px;
-    flex-shrink: 0;
-}
-
-#geschiedenisLink {
+.navButton {
     display: inline-flex;
     height: 64px;
-    padding: 21px 19px 22px 19px;
+    padding: 0px 10px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     background: #EDEDED;
 }
 
-#contactgegevensLink {
-    display: inline-flex;
-    height: 64px;
-    padding: 21px 3px 22px 3px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    background: #EDEDED;
+#navLogo{
+    width: 64px;
 }
 
 #intro {
@@ -100,6 +82,50 @@ nav {
 
 .slide {
     display: none;
+}
+
+#geschiedenis h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#geschiedenis p {
+    font-size: 20px;
+    width: 797px;
+    
+}
+
+#reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#reviewsHeader {
+    width: 223px;
+    height: 34px;
+    font-size: 30px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: #D9D9D9;
+    padding: 15px;
+}
+
+.reviewNaam {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.review .reviewContent {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 0px;
 }
 
 footer {
