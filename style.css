@@ -101,3 +101,19 @@ nav {
 .slide {
     display: none;
 }
+
+footer {
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: #EDEDED;
+}
+
+#footerLogo {
+    width: 198px;
+    height: 90px;
+    flex-shrink: 0;
+}
