@@ -33,7 +33,7 @@ nav {
     color: #000;
 }
 
-#navLogo{
+#navLogo {
     width: 64px;
 }
 
@@ -71,24 +71,24 @@ nav {
     color: #FFF;
 }
 
-#slideshow {
-    display: flex;
-    width: 630px;
-    height: 480px;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-}
-
 .slide {
     display: none;
 }
 
-#geschiedenis{
+.dots{
+    display: flex;
+    flex-direction: row;
+}
+
+.dot {
+    width: 50px;
+    margin: 5px;
+    top: 20px;
+}
+
+#geschiedenis {
     display: flex;
     flex-direction: column;
-    
 }
 
 #geschiedenis h1 {
