@@ -10,7 +10,6 @@ function currentSlide(n) {
 }
 
 function showSlide(n) {
-    var i;
     var x = document.getElementsByClassName("slide");
     var dots = document.getElementsByClassName("dot");
     if (n > x.length) {
@@ -19,12 +18,12 @@ function showSlide(n) {
     if (n < 1) {
         slideIndex = x.length
     }
-    for (i = 0; i < x.length; i++) {
+    for (let i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[slideIndex - 1].src="images/circle.png";
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].src = "images/circle.png"
     }
     x[slideIndex - 1].style.display = "inline";
-    dots[slideIndex - 1].src="images/circle_filled.png"
+    dots[slideIndex - 1].src = "images/circle_filled.png"
 }
