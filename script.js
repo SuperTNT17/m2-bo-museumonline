@@ -28,6 +28,13 @@ function showSlide(n) {
     dots[slideIndex - 1].src = "images/circle_filled.png"
 }
 
-function translate(){
-    
-}
+let translateButton = document.getElementById("translate")
+translateButton.addEventListener("click", (e) => {
+    let html = document.getElementsByTagName("html")[0]
+    if (html.getAttribute("lang") == "nl") {
+        window.location.href = "index_en.html"
+    }
+    else{
+        window.location.href = "index.html"
+    }
+})

@@ -24,7 +24,7 @@ nav {
 }
 
 .navButton {
-    display: inline-flex;
+    display: flex;
     height: 64px;
     padding: 0px 10px;
     justify-content: center;
@@ -33,13 +33,27 @@ nav {
     color: #000;
 }
 
+#translate {
+    all: unset;
+    height: 64px;
+    padding: 0px 10px;
+    background: #EDEDED;
+}
+
+#translate:hover {
+    cursor: pointer;
+}
+
 #navLogo {
     width: 64px;
+    padding: 0px 10px;
 }
+
 
 #intro {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 #introText {
@@ -103,17 +117,18 @@ nav {
     margin: 0px;
 }
 
+#reviewsHeader {
+    width: 223px;
+    height: 34px;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
 #reviews {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 20px;
-}
-
-#reviewsHeader {
-    width: 223px;
-    height: 34px;
-    font-size: 30px;
 }
 
 .review {
