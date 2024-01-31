@@ -27,3 +27,7 @@ function showSlide(n) {
     x[slideIndex - 1].style.display = "inline";
     dots[slideIndex - 1].src = "images/circle_filled.png"
 }
+
+function translate(){
+    
+}
